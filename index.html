@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Delivery</title>
+    <script type="module" src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <button class="add_meal">Add meal</button>
+        <a href="index.html" class="logo">food explorer</a>
+        <button class="basket">Basket of goods</button>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <ul class="meals_list"></ul>
+        <ul class="desert_list"></ul>
+        <ul class="drink_list"></ul>
+      </div>
+    </main>
+
+    <div class="add_meals_window">
+      <button class="close_menu">◀</button>
+      <input class="new_meals_name" placeholder="Name" type="text" />
+      <label>
+        <input type="radio" name="meals" id="new_meals" />
+        <input type="radio" name="desert" id="new_desert" />
+        <input type="radio" name="drink" id="new_drink" />
+      </label>
+      <input class="new_meals_price" placeholder="$ 00,00" type="number" />
+      <textarea
+        placeholder="
+Briefly describe the dish, its ingredients, and composition."
+        name="meals_description"
+        id="new_description"
+        rows="10"
+        cols="72"
+      ></textarea>
+
+      
+      <button class="Add_new_meal">Add new meal</button>
+    </div>
+  </body>
+</html>
